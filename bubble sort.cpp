@@ -25,3 +25,9 @@ cout<<"Numeri ordinati in ordine crescente:"<<endl;
     for(int i=0;i<10;i++){
         cout<<numeri[i]<<endl;
     }
+    cout<<"===================="<<endl;
+cout<<"Il numero piu grande è:" <<numeri[9] <<endl;
+cout<<"===================="<<endl;
+cout<<"Il numero piu piccolo è:" <<numeri[0] <<endl;
+
+ return 0;  
