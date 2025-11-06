@@ -30,4 +30,5 @@ cout<<"Il numero piu grande è:" <<numeri[9] <<endl;
 cout<<"===================="<<endl;
 cout<<"Il numero piu piccolo è:" <<numeri[0] <<endl;
 
- return 0;  
+ return 0;
+}  
