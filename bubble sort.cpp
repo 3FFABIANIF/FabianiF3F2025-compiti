@@ -1,23 +1,27 @@
 #include <iostream>
 using namespace std;
-int main(){
-	int n,j,a,scambio;
-	int arr[10];
-	for(int i=0;i<n;i++){
-		cin>>arr [i];
-	}
-	for(int i=0;i<n;i){
-		for(a=0;a<n-1;a){
-			if(arr[a]>arr[a+1]){
-			scambio=arr [a];
-			arr[a]=arr[a+1];
-			arr[a+1]=scambio;
-			}
-		
-		}
-	}
-	for(int i=0;i<n;i++){
-		cout<<arr[10];
-	}
-	
-}
+int main() {
+
+    int numeri[10];
+    int j=0;
+    int scambio=0;
+
+    cout<<"Inserisci 10 numeri interi:"<<endl;
+    for(int i=0;i<10;i++){
+        cin>>numeri[i];
+    }
+
+    for(int i=0;i<10;i++){
+        for(j=0;j<9-i;j++){
+            if(numeri[j]>numeri[j+1]){
+                scambio=numeri[j];
+                numeri[j]=numeri[j+1];
+                numeri[j+1]=scambio;
+            }
+        }
+    }
+    cout<<"===================="<<endl;
+cout<<"Numeri ordinati in ordine crescente:"<<endl;
+    for(int i=0;i<10;i++){
+        cout<<numeri[i]<<endl;
+    }
