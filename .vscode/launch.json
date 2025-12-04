@@ -1,6 +1,25 @@
-g++ "esercizio 18 pag118.cpp" -o "programma" && ./programma
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
- 
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Avvia",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // Esegue il file compilato
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false, // Cambia in true se vuoi input/output in una finestra separata
+            "MIMode": "gdb",           // Indica di usare GDB
+            "setupCommands": [
+                {
+                    "description": "Abilita la pretty-printing per gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: g++ build active file" // Assicurati che il nome corrisponda al 'label' nel tasks.json
+        }
+    ]
 }
