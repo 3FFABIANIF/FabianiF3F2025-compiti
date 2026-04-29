@@ -10,14 +10,14 @@ int main() {
     cout << "Inserisci numeri (999 per terminare):" << endl;
 
     cin >> prev;
-    if (prev == 999) {
+    if (prev == 100) {
         cout << "Numeri inseriti: 0" << endl;
         return 0;
     }
     count = 1;
 
     cin >> curr;
-    if (curr == 999) {
+    if (curr == 100) {
         cout << "Numeri inseriti: 1" << endl;
         return 0;
     }
