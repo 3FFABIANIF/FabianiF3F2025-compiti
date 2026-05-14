@@ -48,7 +48,7 @@ void GestoreRAMOrdinata::stampaRubrica() const {
     }
 }
 
-
+// GESTORE MIRRORED RAM 
 
 GestoreMirroredRAM::GestoreMirroredRAM(const char* file) {
     strncpy(nomeFile, file, 99);
